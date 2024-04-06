@@ -1,24 +1,24 @@
 <template>
     <div class="container grid grid-cols-4 sticky top-0">
       <!-- Sidebar -->
-      <div class="sidebar h-screen col-span-1 bg-gray-900 py-10 flex flex-col gap-8">
-        <div v-for="(item, index) in dropdownItems" :key="index" class="relative inline-block text-left" @mouseenter="openHelpDropdown(index)" @mouseleave="closeHelpDropdown(index)">
+      <div class="sidebar h-screen  bg-gray-900 py-10 flex flex-col gap-8">
+        <div v-for="(outerItem, outerIndex) in dropdownItems" :key="outerIndex" class="relative inline-block text-left" @mouseenter="openHelpDropdown(outerIndex)" @mouseleave="closeHelpDropdown(outerIndex)">
           <div class="relative">
-            <button class="flex items-center justify-between text-white border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-              {{ item.title }}
+            <span class="flex items-center justify-between text-white border-gray-300 hover:text-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+              {{ outerItem.title }}
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
-            </button>
-            <ul v-show="helpDropdownOpen === index" class="absolute bg-white left-40 border-gray-300 rounded-md shadow-lg dropdown-card">
-              <li v-for="(item, index) in item.subItems" :key="index" class="px-4 py-2 hover:bg-blue-950 hover:text-white text-black">{{ item }}</li>
+            </span>
+            <ul v-show="helpDropdownOpen === outerIndex" class="absolute bg-white left-40 border-gray-300 rounded-md shadow-lg dropdown-card">
+              <li v-for="(innerItem, innerIndex) in outerItem.subItems" :key="innerIndex" class="px-4 py-2 hover:bg-blue-950 hover:text-white text-black">{{ innerItem }}</li>
             </ul>
           </div>
         </div>
       </div>
-        <div class="main col-span-3 m-8">
-            <img src="../assets/main image.png" alt="">
-            <trendingAds />
+      <div class="main col-span-3 m-8">
+        <img src="../assets/main image.png" alt="">
+        <trendingAds />
       </div>
     </div>
   </template>

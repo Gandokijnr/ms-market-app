@@ -2,10 +2,10 @@
     <div>
       <h3 class="text-2xl text-gray-500 font-semibold mt-12">Trending Ads</h3>
     </div>
-    <div class="trending-ads container flex flex-wrap mt-8 gap-5">  
+    <div class="trending-ads container flex justify-between flex-wrap mt-4">  
       <!-- Trending Ad Cards -->
-      <div v-for="(ad, index) in trendingAds" :key="index" class="max-w-60 min-w-60 flex items-center justify-center">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
+      <div v-for="(ad, index) in trendingAds" :key="index" class="max-w-60 min-w-60 flex items-center justify-center mb-4">
+        <div class="bg-white hover:shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
             <img class="w-full h-56 max-w-52 object-cover object-center rounded-t-lg" :src="ad.image" alt="ad image">
           <div class="p-4">
             <h3 class="text-gray-900 font-semibold text-lg">{{ ad.title }}</h3>
@@ -71,6 +71,30 @@
       price: '$499',
       image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
+    { 
+      title: 'Samsung Galaxy S21',
+      subtitle: '6.2-inch Dynamic AMOLED 2X display',
+      price: '$799',
+      image: 'https://images.unsplash.com/photo-1610792516307-ea5acd9c3b00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    { 
+      title: 'Dell XPS 13',
+      subtitle: '13.4-inch InfinityEdge display',
+      price: '$1299',
+      image: 'https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    { 
+      title: 'LG OLED CX Series TV',
+      subtitle: '65-inch 4K OLED display',
+      price: '$2499',
+      image: 'https://plus.unsplash.com/premium_photo-1681236323432-3df82be0c1b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    { 
+      title: 'LG OLED CX Series TV',
+      subtitle: '65-inch 4K OLED display',
+      price: '$2499',
+      image: 'https://plus.unsplash.com/premium_photo-1681236323432-3df82be0c1b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
   ];
   
   const showMobileNumber = (ad) => {
@@ -85,6 +109,8 @@
   </script>
   
   <style scoped>
-  /* Add custom styles for trending ad cards if needed */
+  .trending-ads{
+    width: 90em;
+  }
   </style>
   
