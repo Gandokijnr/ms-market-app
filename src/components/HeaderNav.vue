@@ -56,7 +56,7 @@ const closeDropdown = () => {
             </button>
             <ul v-show="dropdownOpen" class="absolute w-60 bg-white border-gray-300 rounded-md shadow-lg">
               <li class="text-center py-2 hover:bg-blue-950 bg-blue-950 hover:text-white  px-4 m-4 rounded">
-              <RouterLink :to="{'name': 'about'}">SIGN IN</RouterLink>
+              <RouterLink :to="{'name': 'signin'}">SIGN IN</RouterLink>
               </li>
               <li class="px-4 py-2 hover:bg-blue-950 hover:text-white text-black">My Account</li>
               <li class="px-4 py-2 hover:bg-blue-950 hover:text-white text-black">Saved Items</li>

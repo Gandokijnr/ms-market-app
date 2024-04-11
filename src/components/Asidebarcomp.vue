@@ -10,7 +10,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
             </span>
-            <ul v-show="helpDropdownOpen === outerIndex" class="absolute bg-white left-40 border-gray-300 rounded-md shadow-lg dropdown-card">
+            <ul v-show="helpDropdownOpen === outerIndex" class="absolute bg-white left-40 border-gray-300 rounded-md shadow-lg dropdown-card top-0">
               <li v-for="(innerItem, innerIndex) in outerItem.subItems" :key="innerIndex" class="px-4 py-2 hover:bg-blue-950 hover:text-white text-black">{{ innerItem }}</li>
             </ul>
           </div>
@@ -53,9 +53,10 @@
   }
   
   .dropdown-card {
-    margin-left: 13em;
-    min-width: 100%;
-    margin-top: -2em;
+    margin-left: 14em;
+    width: 100%;
+    min-height: 80vh;
+    max-height: 80vh;
   }
   </style>
   
