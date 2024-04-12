@@ -22,7 +22,7 @@
               </div>
               <div class="flex gap-3 mb-4 my-4 flex-col">
                   <span class="text-slate-500">Other Sign Up option</span>
-                  <button type="submit" class="flex items-center justify-center bg-blue-950 text-white px-4 py-4 w-full rounded-lg hover:bg-blue-900 focus:outline-none focus:bg-blue-900">
+                  <button type="submit" class="flex items-center justify-center border text-blue-950 px-4 py-4 w-full rounded-lg hover:bg-slate-100 focus:outline-none focus:bg-blue-900">
                     <img src="../assets/google.png" class="w-1/6" alt="">
                     Sign Up with Google
                   </button>
