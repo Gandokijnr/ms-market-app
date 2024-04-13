@@ -23,7 +23,42 @@ const router = createRouter({
       path: '/signup',
       name: 'signup',
       component: () => import('../views/Mssignup.vue')
-    }
+    },
+    {
+      path: '/iphoneChecklist',
+      name: 'iphonechecklist',
+      component: () => import('../views/iphoneChecklistview.vue')
+    },
+    {
+      path: '/samsungChecklist',
+      name: 'samsungchecklist',
+      component: () => import('../views/samsungChecklistview.vue')
+    },
+    {
+      path: '/infinixChecklist',
+      name: 'infinixchecklist',
+      component: () => import('../views/infinixChecklistview.vue')
+    },
+    {
+      path: '/teknoChecklist',
+      name: 'teknochecklist',
+      component: () => import('../views/TeknoChecklistview.vue')
+    },
+    {
+      path: '/itelChecklist',
+      name: 'itelchecklist',
+      component: () => import('../views/ItelChecklistview.vue')
+    },
+    {
+      path: '/othersChecklist',
+      name: 'otherschecklist',
+      component: () => import('../views/OthersChecklistview.vue')
+    },
+    {
+      path: '/defaultview',
+      name: 'defaultview',
+      component: () => import('../views/defaultView.vue')
+    },
   ]
 })
 
