@@ -58,11 +58,11 @@
                 <img src="../assets/mobile.png" class="w-32 hover:shadow" alt="">
                 <img src="../assets/mobile.png" class="w-32 hover:shadow" alt="">
                 <img src="../assets/mobile.png" class="w-32 hover:shadow" alt="">
-                <img src="../assets/mobile.png" class="w-32 hover:shadow" alt="">  
+                <img src="../assets/mobile.png" class="w-32 hover:shadow" alt="">
             </div>
         </div>
-        <textarea class="border border-gray-300 p-4 resize-none focus:outline-none h-80" readonly>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cum exercitationem quis obcaecati natus fugiat consequatur a nesciunt vel totam! Illo totam tenetur, magnam quas ipsam tempora mollitia ex aut fugit? Perspiciatis veritatis rerum ratione accusantium, magni accusamus ipsam quas, dolore in provident a est qui earum, aliquam repellendus similique quia labore quo! Id cum repellat nostrum perferendis. Labore recusandae error, doloremque laudantium harum voluptatibus tempora hic vitae beatae necessitatibus quisquam. Rerum sunt est non at expedita! Minima placeat error harum modi numquam earum corporis dolore consectetur inventore quae officia, voluptatibus accusamus illo architecto sed nobis dignissimos recusandae molestias, ipsam ut quo explicabo fuga sequi necessitatibus. Eaque dolorum iure soluta deleniti nostrum, accusamus facilis officiis consequatur animi! Debitis molestias alias sequi laudantium officiis hic repellendus assumenda accusantium distinctio odio saepe illum impedit laboriosam aspernatur nostrum eaque amet odit dolores, nulla provident dolorum! Asperiores, tempore quos perspiciatis cum deserunt eligendi qui, deleniti doloremque, consectetur facilis porro! Adipisci a quibusdam asperiores magnam culpa quam, veritatis assumenda ea quae, voluptatibus ducimus maxime. Eligendi, et distinctio sint numquam sed cum sapiente atque voluptatibus beatae, cupiditate repudiandae officiis, nam laboriosam? Tenetur, enim a placeat fugiat quas doloremque iusto esse quis incidunt cumque dolor ad neque.
+            <textarea class="border border-gray-300 p-4 resize-none focus:outline-none h-80" readonly>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cum exercitationem quis obcaecati natus fugiat consequatur a nesciunt vel totam! Illo totam tenetur, magnam quas ipsam tempora mollitia ex aut fugit? Perspiciatis veritatis rerum ratione accusantium, magni accusamus ipsam quas, dolore in provident a est qui earum, aliquam repellendus similique quia labore quo! Id cum repellatneque.
             </textarea>
     </div>
 </div>
