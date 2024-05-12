@@ -10,7 +10,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </span>
-          <ul v-show="helpDropdownOpen === outerIndex" class="absolute bg-white left-40 border-gray-300 rounded-md shadow-lg dropdown-card top-0">
+          <ul v-show="helpDropdownOpen === outerIndex" class="absolute bg-white left-40 border-gray-300 rounded-md shadow-lg dropdown-card top-0 z-10">
             <li v-for="(innerItem, innerIndex) in outerItem.subItems" :key="innerIndex" class="px-4 py-2 hover:bg-blue-950 hover:text-white text-black">
               <!-- Use router-link with dynamic route -->
               <router-link :to="getSubItemRoute(outerItem.title.toLowerCase(), innerItem.toLowerCase())" class="pr-32 p-2">{{ innerItem }}</router-link>

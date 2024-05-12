@@ -59,6 +59,20 @@ const router = createRouter({
       name: 'defaultview',
       component: () => import('../views/defaultView.vue')
     },
+    {
+      path: '/gadgetDetails/:id',
+      name: 'gadgetDetails',
+      component: () => import('../views/gadgetDetails.vue'),
+      props: true
+    },
+
+    //CATCH ALL ROUTE
+    {
+      path: '/:catchAll(.*)',
+      name: 'NotFoundPage',
+      component: () => import('../views/NotFoundPage.vue'),
+    }
+
   ]
 })
 
