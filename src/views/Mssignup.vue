@@ -20,7 +20,11 @@
             <span v-if="confirmPasswordError" class="text-red-500 text-sm">{{ confirmPasswordError }}</span>
           </div>
           <div class="flex items-center justify-between mb-4 my-4">
-            <button type="submit" class="bg-blue-950 text-white p-5 w-full rounded-lg hover:bg-blue-900 focus:outline-none focus:bg-blue-900">Sign Up</button>
+            <button type="submit" class="bg-blue-950 text-white p-5 w-full rounded-lg hover:bg-blue-900 focus:outline-none focus:bg-blue-900 flex items-center justify-center">
+              <loader v-if="isLoading" class="mr-2"></loader>
+              <span v-if="!isLoading">Sign Up</span>
+              <span v-if="isLoading">Signing Up...</span>
+            </button>
           </div>
           <div class="flex gap-3 mb-4 my-4 flex-col">
             <span class="text-slate-500">Other Sign Up option</span>
@@ -36,9 +40,11 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import loader from '@/components/loader.vue'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
 const email = ref('');
@@ -47,6 +53,7 @@ const confirmPassword = ref('');
 const emailError = ref('');
 const passwordError = ref('');
 const confirmPasswordError = ref('');
+const isLoading = ref(false);
 const router = useRouter();
 
 const handleSignUp = async () => {
@@ -77,6 +84,9 @@ const handleSignUp = async () => {
     return;
   }
 
+  // Show loader
+  isLoading.value = true;
+
   // Proceed with Firebase sign up
   try {
     const auth = getAuth();
@@ -89,6 +99,11 @@ const handleSignUp = async () => {
     } else {
       alert('Error signing up: ' + error.message);
     }
+  } finally {
+    // Hide loader
+    isLoading.value = false;
   }
 };
 </script>
+
+
